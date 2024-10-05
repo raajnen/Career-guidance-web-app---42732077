@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cloud Career Guidance</title>
+    <style>
+       /* Basic Style */
+       body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f0f2f5;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color:orangered;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+            letter-spacing: 2px;
+        }
+
+        /* Navigation Style */
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1.1rem;
+        }
+
+        nav a:hover {
+            color: #FFEB3B;
+        }
+
+header h1 {
+    font-size: 2rem;
+    margin: 0;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 15px 0 0 0;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+nav ul li {
+    display: inline-block;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+    padding: 10px;
+}
+
+nav ul li a:hover {
+    color: #ffc107;
+}
+
+/* Main Section */
+main {
+    padding: 50px;
+    max-width: 1200px;
+    margin: 0 auto;
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.intro {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.intro h2 {
+    font-size: 2.7rem;
+    color: #007BFF;
+    margin-bottom: 15px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+}
+
+.intro p {
+    font-size: 1.2rem;
+    color: #555;
+}
+
+/* Feature Section */
+.features {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.feature {
+    background-color: white;
+    border-radius: 12px;
+    padding: 25px;
+    flex: 1;
+    min-width: 280px;
+    text-align: center;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, background-color 0.3s, box-shadow 0.3s;
+}
+
+.feature h3 {
+    font-size: 1.6rem;
+    color: #007BFF;
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+
+.feature p {
+    font-size: 1rem;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.feature img {
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+    margin-top: 15px;
+    border-radius: 8px;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.feature:hover {
+    transform: translateY(-8px);
+    background-color: #f7f7f7;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.feature:hover img {
+    opacity: 0.95;
+    transform: scale(1.05);
+}
+
+/* CTA Section */
+.cta {
+    background-color: #007BFF;
+    color: white;
+    padding: 50px;
+    text-align: center;
+    border-radius: 12px;
+    margin: 50px 0;
+}
+
+.cta h3 {
+    font-size: 2.2rem;
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+
+.cta a {
+    background-color: white;
+    color: #007BFF;
+    padding: 15px 30px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1.1rem;
+    border-radius: 6px;
+    transition: background-color 0.3s, color 0.3s;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+.cta a:hover {
+    background-color: #ffc107;
+    color: white;
+}
+
+/* Additional Content */
+.additional-section {
+    margin-top: 60px;
+}
+
+.additional-section h2 {
+    font-size: 2.2rem;
+    color: #007BFF;
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+
+.additional-section p {
+    font-size: 1.1rem;
+    color: #555;
+    line-height: 1.7;
+}
+
+footer {
+    background: rgba(0, 0, 0, 0.85);
+    color: white;
+    text-align: center;
+    padding: 25px 0;
+    margin-top: 60px;
+    font-size: 0.9rem;
+    letter-spacing: 0.5px;
+}
+
+footer a {
+    text-decoration: none;
+    color: #ffc107;
+    font-weight: 500;
+}
+
+footer a:hover {
+    color: #ffffff;
+    text-decoration: underline;
+}
+
+        a{
+        text-decoration: none;
+        color: black;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <h1>Cloud Career Guidance</h1>
+        <nav>
+            <ul>
+                <li><a href="certificate.html">Certifications</a></li>
+                <li><a href="skill.html">Skills</a></li>
+                <li><a href="#jobs">Jobs</a></li>
+                <li><a href="#news">News</a></li>
+                <li><a href="#resources">Resources</a></li>
+                <li><a href="#Contact">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <section class="intro">
+            <h2>Welcome to Your Cloud Journey</h2>
+            <p>Join us as we explore the vast opportunities in cloud computing. Get certified, develop new skills, or find your dream job — we’ve got resources for you.</p>
+        </section>
+
+        <!-- Features Section -->
+        <section class="features">
+            <div class="feature" id="certifications">
+                <h3>Certifications</h3>
+                <a href="certificate.html">Get insights into top cloud certifications that will boost your career. We provide study guides, tips, and the latest industry-recognized certifications.</a>
+                <img src="certifications.jpg" alt="Certifications">
+            </div>
+            <div class="feature" id="skills">
+                <h3>Skill Development</h3>
+                <a href="skill.html">Learn practical skills for AWS, Azure, and Google Cloud through our curated resources and hands-on projects. Develop your cloud expertise today.</a>
+                <img src="skills.jpg" alt="Skills">
+            </div>
+            <div class="feature" id="jobs">
+                <h3>Job Listings</h3>
+                <a href="jobs.html">Explore cloud job openings from leading companies. Filter job listings by location, salary, and experience to find the perfect match for your expertise.</a>
+                <img src="jobs.jpg" alt="Jobs">
+            </div>
+        </section>
+
+        <!-- Call to Action Section -->
+        <section class="cta">
+            <h3>Ready to take the next step?</h3>
+            <a href="certificate.html">Get Started Now</a>
+        </section>
+
+        <!-- Additional Content -->
+        <section class="additional-section">
+            <div id="news" class="news">
+                <h2>Latest Industry News</h2>
+                <p>Stay updated with the latest trends and growth in cloud computing. 
+                    Our news section covers the rise of new technologies and industry insights.</p>
+                
+                <h3>Edge Computing: Reducing Latency and Improving Efficiency</h3>
+                <p>Edge computing brings data processing closer to devices, enabling faster and real-time data analysis, vital for IoT and autonomous systems.</p>
+            
+                <h3>Multi-Cloud Strategies on the Rise</h3>
+                <p>Adopting multi-cloud environments helps organizations optimize flexibility, reduce costs, and prevent vendor lock-in by using multiple providers.</p>
+            
+                <h3>Cloud-Native Applications and Microservices</h3>
+                <p>Cloud-native apps, built on microservices and containerization, are transforming software development by enhancing scalability and security.</p>
+            
+                <h3>AI and Machine Learning in the Cloud</h3>
+                <p>Cloud platforms offer advanced AI and ML services, providing businesses with powerful data analytics without heavy infrastructure investments.</p>
+            
+                <h3>Serverless Computing: Simplifying Infrastructure</h3>
+                <p>Serverless computing removes server management tasks, allowing developers to focus on building apps with automatic scaling based on usage.</p>
+            
+                <h3>Sustainability with Green Cloud Computing</h3>
+                <p>Cloud providers like AWS and Google are focusing on sustainability by running energy-efficient, carbon-neutral data centers.</p>
+            
+                <h3>Hybrid Cloud Solutions</h3>
+                <p>Hybrid cloud setups offer the security of private clouds combined with the scalability of public clouds, favored by regulated industries.</p>
+            
+                <h3>Enhanced Cloud Security</h3>
+                <p>Cloud security is evolving with better encryption, AI-based threat detection, and zero-trust models to protect sensitive data.</p>
+            
+                <h3>Automation and DevOps</h3>
+                <p>DevOps integration and automation tools are accelerating cloud infrastructure management, driving innovation and efficiency in development.</p>
+            </div>
+            
+            <div id="resources" class="resources">
+                <h2>Cloud Learning Resources</h2>
+                <p>Access free eBooks, articles, and tutorials for AWS, Google Cloud, and Azure. Stay up-to-date with the best practices in cloud architecture.</p>
+            
+                <h3>Enhance Your Skills in Cloud Computing</h3>
+                <p>As cloud computing continues to transform the technology landscape, the demand for skilled professionals in this field is rapidly increasing. Whether you're a beginner looking to understand the basics or an experienced professional seeking to specialize, a wealth of resources is available to help you learn about cloud technologies. Below are various categories of cloud learning resources:</p>
+            
+                <h4>1. Online Courses and Certifications</h4>
+                <p>Numerous platforms offer structured online courses and certification programs in cloud computing:</p>
+                <ul>
+                    <li><strong>Coursera</strong>: Partners with universities and tech companies to provide courses on cloud computing. Popular offerings include Google Cloud's Professional Cloud Architect and AWS's Architecting on AWS.</li>
+                    <li><strong>edX</strong>: Offers programs from universities like Harvard and MIT. You can find specialized cloud courses, including AWS Certified Solutions Architect and Azure Fundamentals.</li>
+                    <li><strong>Udacity</strong>: Features Nanodegree programs focused on cloud technologies, such as Cloud Developer and Cloud DevOps Engineer.</li>
+                    <li><strong>LinkedIn Learning</strong>: Provides a vast library of courses covering various aspects of cloud computing, including cloud architecture, security, and deployment.</li>
+                </ul>
+            
+                <h4>2. Official Cloud Provider Resources</h4>
+                <p>Cloud providers often offer their own educational resources, including:</p>
+                <ul>
+                    <li><strong>AWS Training and Certification</strong>: Amazon Web Services offers free and paid training resources, including digital training, classroom training, and certification preparation.</li>
+                    <li><strong>Microsoft Learn</strong>: Microsoft’s free learning platform provides a comprehensive collection of modules and learning paths for Azure, including hands-on labs and certifications.</li>
+                    <li><strong>Google Cloud Training</strong>: Google offers courses and certifications that cover the fundamentals of Google Cloud, machine learning, data analytics, and more.</li>
+                    <li><strong>IBM Cloud Education</strong>: IBM provides a variety of cloud computing resources, including free courses, webinars, and certification programs related to IBM Cloud services.</li>
+                </ul>
+            
+                <h4>3. Books and eBooks</h4>
+                <p>Reading materials can provide deeper insights into cloud concepts and practices:</p>
+                <ul>
+                    <li><strong>“Cloud Computing: Concepts, Technology & Architecture” by Thomas Erl</strong>: This book covers foundational concepts and technologies in cloud computing.</li>
+                    <li><strong>“Architecting the Cloud: Design Decisions for Cloud Computing Service Models” by Michael J. Kavis</strong>: A great resource for understanding cloud architecture and design considerations.</li>
+                    <li><strong>“Cloud Native Patterns: Designing change-tolerant software” by Cornelia Davis</strong>: This book focuses on building cloud-native applications and explores architectural patterns.</li>
+                    <li><strong>“The Big Switch: Rewiring the World, from Edison to Google” by Nicholas Carr</strong>: A thought-provoking read on the history and future of cloud computing.</li>
+                </ul>
+            
+                <h4>4. YouTube Channels and Video Tutorials</h4>
+                <p>Video content can offer a more engaging way to learn about cloud computing:</p>
+                <ul>
+                    <li><strong>AWS Online Tech Talks</strong>: AWS's official YouTube channel provides technical content, demos, and discussions on various cloud topics.</li>
+                    <li><strong>Google Cloud Platform</strong>: Offers tutorials and overviews of its services, helping learners understand practical applications of cloud technologies.</li>
+                    <li><strong>Microsoft Azure</strong>: Features educational videos and presentations from experts, covering a range of topics from basics to advanced cloud strategies.</li>
+                </ul>
+            
+                <h4>5. Blogs and Online Communities</h4>
+                <p>Engaging with communities and reading expert blogs can keep you updated on the latest trends and best practices:</p>
+                <ul>
+                    <li><strong>AWS Blog</strong>: Stay informed about AWS updates, features, and best practices.</li>
+                    <li><strong>Azure Blog</strong>: Microsoft Azure’s blog provides insights into new services, customer stories, and best practices.</li>
+                    <li><strong>Google Cloud Blog</strong>: A platform for news, features, and tutorials related to Google Cloud services.</li>
+                    <li><strong>Reddit Communities</strong>: Subreddits like r/cloudcomputing, r/AWS, and r/Azure are excellent places to ask questions, share knowledge, and connect with other learners.</li>
+                </ul>
+            
+                <h4>6. Hands-On Labs and Practice Environments</h4>
+                <p>Practical experience is crucial for mastering cloud technologies:</p>
+                <ul>
+                    <li><strong>Qwiklabs</strong>: Offers hands-on labs for AWS and Google Cloud, allowing users to practice in real cloud environments.</li>
+                    <li><strong>Azure Sandbox</strong>: Microsoft provides a sandbox environment for Azure, enabling users to explore and experiment with various services without any cost.</li>
+                    <li><strong>Cloud Academy</strong>: A learning platform that combines courses with hands-on labs to help users gain practical experience in cloud environments.</li>
+                </ul>
+            
+                <h4>7. Workshops and Meetups</h4>
+                <p>Participating in workshops and meetups can enhance your learning experience:</p>
+                <ul>
+                    <li><strong>Local Meetups</strong>: Check platforms like Meetup.com for local cloud computing groups that host workshops, networking events, and discussions.</li>
+                    <li><strong>Webinars and Conferences</strong>: Attend industry conferences such as AWS re:Invent, Google Cloud Next, or Microsoft Ignite to learn from experts and network with peers.</li>
+                </ul>
+            
+                <h3>Conclusion</h3>
+                <p>With a plethora of resources available, learners at all levels can find suitable materials to enhance their understanding of cloud computing. Whether you prefer structured courses, hands-on labs, or engaging with community forums, investing time in cloud learning will prepare you for a promising career in this dynamic field.</p>
+            </div>
+            
+        </section>
+    </main>
+
+    <footer>
+        <p id="Contact">
+        Email:cloudcareer@gmail.com<br>
+        phone:+911234567890<br>&copy; 2024 Cloud Career Guidance. All Rights Reserved.
+        </p>
+    </footer>
+</body>
+</html>
